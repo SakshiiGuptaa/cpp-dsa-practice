@@ -6,7 +6,7 @@
 //Brute -> sort, print last element
 //Time complexity -> O(NlogN)
 
-//Optimal -> store largest element using largest variable, traverse the srrays if found any element greater than largest then, update largest
+//Optimal -> store largest element using largest variable, traverse the arrays if found any element greater than largest then, update largest
 //Time complexity -> O(N)
 
 #include<bits/stdc++.h>
