@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 //TC = O(N)
+//First element store as temp, remining elements shift by one left side.then, place that temp element at the end of the array
 vector<int> rotate_one(vector<int>& v){
     int temp = v[0];
     for (int i = 1; i < v.size(); i++){
