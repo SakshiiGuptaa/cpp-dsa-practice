@@ -21,6 +21,7 @@ void reverse(vector<int>& v, int start, int end){
 //SC = O(K)
 // void rotateArrayK(vector<int>& v, int k){
 //     int n = v.size();
+//     k = k % n;    
 //     vector<int> temp(k);
 //     for (int i = 0; i < k; i++){
 //         temp[i] = v[i];
@@ -35,11 +36,23 @@ void reverse(vector<int>& v, int start, int end){
 //optimal
 //TC = O(K)+O(N-K)+O(N) = O(2N)
 //SC = O(1)
+
+//left rotation
 void rotateArrayK(vector<int>& v, int k){
     reverse(v.begin(),v.begin()+k);
     reverse(v.begin() + k, v.end());
     reverse(v.begin(), v.end());
 }
+
+//right rotation
+// void rotate(vector<int>& nums, int k) {
+//         k=k%nums.size();
+//         if(nums.size()>=1){
+//         reverse(nums.begin(),nums.begin()+nums.size()-k);
+//         reverse(nums.begin()+nums.size()-k, nums.begin()+nums.size());
+//         reverse(nums.begin(), nums.end());
+//         }
+// }
 int main(){
     int n;
     cin >> n;
