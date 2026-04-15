@@ -40,6 +40,9 @@ using namespace std;
 //Using Boyer-Moore Voting Algorithm
 // TC = O(N) and SC = O(1)
 int majority_element(vector<int>& arr) {
+
+    if(arr.empty()) return -1;
+    
     int el;
     int cnt =0;
     int n = arr.size();
