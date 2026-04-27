@@ -1,0 +1,6 @@
+1. Content -> Aditya verma
+2. 3-4 Approachs ->
+    1. IBH (Induction, Base case, Hypothesis) -> Linked list, Tree
+    2. Recursion tree -> Medium problems
+    3. Choice diagram -> Hard/complex
+    4. later
