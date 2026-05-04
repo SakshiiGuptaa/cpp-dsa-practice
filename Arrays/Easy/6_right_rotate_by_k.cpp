@@ -21,7 +21,11 @@ using namespace std;
 //Optimal
 
 void right_rotate(vector<int>& v, int n, int k){
-    k = k % n;
+    if(n==0)
+        return;
+
+    k = k % n; 
+
     reverse(v.begin(), v.begin() + n - k);
     reverse(v.begin()+n-k, v.begin() + n );
     reverse(v.begin(), v.begin() + n);
